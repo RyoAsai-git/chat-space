@@ -43,7 +43,7 @@ Things you may want to cover:
 |------|----|-------|
 |user|references|foreign_key: true|
 |group|references|foreign_key: true|
-|body|text|null: false|
+|body|text||
 |image|string||
 
 ### Association

@@ -49,6 +49,7 @@ Things you may want to cover:
 ### Association
 - belongs_to :user
 - belongs_to :group
+- validates :text,presence: true, unless: 'image.present?'
 
 
 
@@ -57,11 +58,12 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|nickname|text|null: false, foreign_key: true|
-|email|text|null: false, foreign_key: true|
+|nickname|text|null: false,|
+|email|text|null: false,|
 
 ### Association
 has_many :messages
+has_many :group_users
 has_many :gruops, through: :groups_users
 
 
@@ -76,5 +78,6 @@ has_many :gruops, through: :groups_users
 
 ### Association
 has_many :messages:
+has_many :group_users
 has_many :users, through: :groups_users
 

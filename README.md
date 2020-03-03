@@ -27,8 +27,8 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
@@ -41,15 +41,15 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 |body|text|null: false|
-|image|string|null: false|
+|image|string||
 
 ### Association
 - belongs_to :user
 - belongs_to :group
-- validates :text,presence: true, unless: 'image.present?'
+- validates :body,presence: true, unless: 'image.present?'
 
 
 
@@ -58,7 +58,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|nickname|text|null: false,|
+|nickname|text|null: false, index: true|
 |email|text|null: false,|
 
 ### Association
@@ -73,8 +73,7 @@ has_many :gruops, through: :groups_users
 
 |Column|Type|Options|
 |------|----|-------|
-|group_name|text|null: false|
-|member|text|null: false|
+|name|text|null: false|
 
 ### Association
 has_many :messages:

@@ -41,8 +41,8 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|user|references|null: false, foreign_key: true|
-|group|references|null: false, foreign_key: true|
+|user|references|foreign_key: true|
+|group|references|foreign_key: true|
 |body|text|null: false|
 |image|string||
 
@@ -58,7 +58,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|nickname|text|null: false, index: true|
+|nickname|string|null: false, index: true|
 |email|text|null: false,|
 
 ### Association
@@ -73,7 +73,7 @@ has_many :gruops, through: :groups_users
 
 |Column|Type|Options|
 |------|----|-------|
-|name|text|null: false|
+|name|string|null: false|
 
 ### Association
 has_many :messages:

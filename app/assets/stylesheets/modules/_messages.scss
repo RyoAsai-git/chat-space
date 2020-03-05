@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+$color-btn: #38aef0;
+$color-message-base: #ffffff;
+
+.user{
+  background-color: #253141;
+  height: 100px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+  font-weight: bold;
+  &__name {
+    font-size: 16px;
+    height: 20px;
+    width: 200px;
+    color: $color-message-base;
+  }
+  &__font {
+    height: 20px;
+    width: 60px;
+    text-align: right;
+    a {
+        color: $color-message-base;
+        margin-left: 5px;
+      }
+  }
+}
+
+
+.contents{
+  background-color: #2f3e51;
+  color: $color-message-base;
+  height: calc(100vh - 100px);
+  width: 300px;
+  font-weight: bold;
+  float: left;
+  &__group {
+    .ul {
+      margin: 20px 20px 5px 20px;
+      font-size: 15px;
+      .li {
+        margin-bottom: 40px;
+        font-size: 11px; 
+      }
+    }
+  }
+}
+
+.chat {
+  background-color: $color-message-base;
+  height: 100px;
+  width: calc(100vw - 300px);
+  border-bottom: 0.5px #999999 solid;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 300px;
+  &__name {
+    margin: 35px 0 15px 40px;
+    .ul {
+      color: #333333;
+      font-size: 20px;
+      .li {
+        color: #999999;
+        margin-top: 15px;
+        font-size: 12px;
+      }
+    }
+  }
+
+
+  a {
+    color: $color-btn;
+    border-color: $color-btn;
+    height: 40px;
+    width: 72px;
+    margin-top: 28px;
+    padding: 0 20px;
+    line-height: 40px;
+    font-size: 16px;
+    border: 1px solid;
+    position: absolute;
+    right: 28px;
+    text-decoration: none;
+  }
+}
+
+.message {
+ height: calc(100vh - 190px);
+ width: calc(100vw - 300px);
+ left: 300px;
+ padding-left: 40px;
+ position: absolute;
+ &__name {
+   margin-top: 35px;
+   margin-bottom: 12px;
+   line-height: 25px; 
+   display: flex;
+   .ul-name {
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+   }
+   .ul-date {
+     color: #999999;
+     margin-left: 10px;
+     font-size: 12px;
+   }
+ }
+ &__content {
+   color: #434a54;
+   margin-top: 12px;
+   margin-bottom: 46px;
+   font-size: 14px;
+ }
+}
+
+.form {
+  background-color: #d2d2d2;
+  height: 90px;
+  width: calc(100vw - 300px);
+  margin-left: 300px;
+  bottom: 0;
+  display: flex;
+  position: absolute;
+  &__textbox {
+    width: 100%;
+    margin: 20px 150px 20px 50px;
+    display: flex;
+    .ul-content {
+      width: 100%;
+      padding-left: 10px;
+      line-height: 50px;
+      &__text {
+        height: 50px;
+        width: 100%;
+        padding: 0 0px 0 10px;
+        position: relative;
+        &__image {
+          position: absolute;
+          cursor: pointer;
+          top: 20px;
+          right: 160px;
+          &__file {
+            display: none;
+          }
+        }
+      }   
+    }
+      
+    a {
+      background-color: $color-btn;
+      color: $color-message-base;
+      width: 100px;
+      height: 50px; 
+      right: 40px;
+      padding: 0 30px;
+      margin-left: 15px;
+      text-align: center;
+      line-height: 50px; 
+      position: absolute;
+      cursor: pointer; 
+      text-decoration: none;
+    }
+  }
+}

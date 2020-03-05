@@ -1,43 +1,44 @@
-.chat
-  .chat__name
-    .ul
-      test
-      .li
-        Member: Name
-  .chat__edit
-  = link_to "Edit","#", class: "chat__edit"
+.main-chat
+  .chat
+    .chat__name
+      .ul
+        test
+        .li
+          Member: Name
+    .chat__edit
+    = link_to "Edit","#", class: "chat__edit"
 
-.message
-  .message__name
-    .ul-name
-      name
-    .ul-date
-      2019/11/20(Wed) 17:43:01
-  .message__content
-    おはよう
-  .message__name
-    .ul-name
-      name
-    .ul-date
-      2019/11/20(Wed) 17:43:01
-  .message__content
-    おはよう
-  .message__name
-    .ul-name
-      name
-    .ul-date
-      2019/11/20(Wed) 17:43:01
-  .message__content
-    おはよう
-  
-.form
-  .form__textbox
-    .ul-content 
-      %input{type: "text", class: "ul-content__text", placeholder: "type a message"} 
-      %label{class: "ul-content__text__image"}
-        = icon('fas', 'image')
-        %input{type: "file", class: "ul-content__text__image__file"}
-    .ul-submit   
-    = link_to "Send","#", class: "ul-content__submit-btn"
+  .message
+    .message__name
+      .ul-name
+        name
+      .ul-date
+        2019/11/20(Wed) 17:43:01
+    .message__content
+      おはよう
+    .message__name
+      .ul-name
+        name
+      .ul-date
+        2019/11/20(Wed) 17:43:01
+    .message__content
+      おはよう
+    .message__name
+      .ul-name
+        name
+      .ul-date
+        2019/11/20(Wed) 17:43:01
+    .message__content
+      おはよう
+    
+  .form
+    .form__textbox
+      .ul-content 
+        %input{type: "text", class: "ul-content__text", placeholder: "type a message"} 
+        %label{class: "ul-content__text__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "ul-content__text__image__file"}
+      .ul-submit   
+      = link_to "Send","#", class: "ul-content__submit-btn"
+          
         
-      

@@ -4,6 +4,10 @@
 $color-btn: #38aef0;
 $color-message-base: #ffffff;
 
+.wrapper{
+  display: flex;
+}
+
 .user{
   background-color: #253141;
   height: 100px;
@@ -37,10 +41,10 @@ $color-message-base: #ffffff;
   height: calc(100vh - 100px);
   width: 300px;
   font-weight: bold;
-  float: left;
   &__group {
     .ul {
-      margin: 20px 20px 5px 20px;
+      padding-top: 20px;
+      margin: 0px 20px 5px 20px;
       font-size: 15px;
       .li {
         margin-bottom: 40px;
@@ -56,9 +60,9 @@ $color-message-base: #ffffff;
   width: calc(100vw - 300px);
   border-bottom: 0.5px #999999 solid;
   display: flex;
-  position: absolute;
-  top: 0px;
-  left: 300px;
+  // position: absolute;
+  // top: 0px;
+  // left: 300px;
   &__name {
     margin: 35px 0 15px 40px;
     .ul {
@@ -92,9 +96,9 @@ $color-message-base: #ffffff;
 .message {
  height: calc(100vh - 190px);
  width: calc(100vw - 300px);
- left: 300px;
+//  left: 300px;
  padding-left: 40px;
- position: absolute;
+//  position: absolute;
  &__name {
    margin-top: 35px;
    margin-bottom: 12px;
@@ -123,7 +127,6 @@ $color-message-base: #ffffff;
   background-color: #d2d2d2;
   height: 90px;
   width: calc(100vw - 300px);
-  margin-left: 300px;
   bottom: 0;
   display: flex;
   position: absolute;

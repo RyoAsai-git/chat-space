@@ -60,9 +60,6 @@ $color-message-base: #ffffff;
   width: calc(100vw - 300px);
   border-bottom: 0.5px #999999 solid;
   display: flex;
-  // position: absolute;
-  // top: 0px;
-  // left: 300px;
   &__name {
     margin: 35px 0 15px 40px;
     .ul {
@@ -96,9 +93,7 @@ $color-message-base: #ffffff;
 .message {
  height: calc(100vh - 190px);
  width: calc(100vw - 300px);
-//  left: 300px;
  padding-left: 40px;
-//  position: absolute;
  &__name {
    margin-top: 35px;
    margin-bottom: 12px;

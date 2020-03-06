@@ -35,21 +35,27 @@ $color-message-base: #ffffff;
 }
 
 
-.contents{
+.side-bar__group-list{
   background-color: #2f3e51;
   color: $color-message-base;
   height: calc(100vh - 100px);
   width: 300px;
+  padding: 20px 20px 0px 20px;
   font-weight: bold;
   &__group {
-    .ul {
-      padding-top: 20px;
-      margin: 0px 20px 5px 20px;
+    a {
       font-size: 15px;
-      .li {
-        margin-bottom: 40px;
-        font-size: 11px; 
-      }
+      color: $color-message-base;
+      text-decoration: none;
+      margin-bottom: 5px;
+    }
+    &__name {
+      font-size: 15px;
+    }
+    &__message {
+      margin-top: 5px;
+      margin-bottom: 40px;
+      font-size: 11px; 
     }
   }
 }

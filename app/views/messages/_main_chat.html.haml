@@ -2,13 +2,15 @@
   .chat
     .chat__name
       .ul
-        test
+        = @group.name
         .li
-          Member: Name
+          ="Member:" + @group.users.pluck(:name).join(" ")
     .chat__edit
-    = link_to "Edit","#", class: "chat__edit"
+      = link_to edit_group_path(current_user) do 
+        = "Edit"
 
   .message
+    -# = render @messages
     .message__name
       .ul-name
         name
@@ -34,11 +36,10 @@
   .form
     .form__textbox
       .ul-content 
-        %input{type: "text", class: "ul-content__text", placeholder: "type a message"} 
-        %label{class: "ul-content__text__image"}
-          = icon('fas', 'image')
-          %input{type: "file", class: "ul-content__text__image__file"}
-      .ul-submit   
-      = link_to "Send","#", class: "ul-content__submit-btn"
-          
-        
+        = form_for [@group, @message] do |f|
+          = f.text_field :body, class: 'ul-content__text', placeholder: 'type a message'
+          = f.label :image, class: "ul-content__text__image" do
+            = icon('fas', 'image', class: 'icon')
+            = f.file_field :file, class: 'ul-content__text__image__file'
+          .ul-submit   
+          = f.submit 'Send', class: 'ul-submit'

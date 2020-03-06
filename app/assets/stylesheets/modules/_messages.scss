@@ -156,11 +156,10 @@ $color-message-base: #ffffff;
       }   
     }
       
-    a {
+    .ul-submit {
       background-color: $color-btn;
       color: $color-message-base;
       width: 100px;
-      height: 50px; 
       right: 40px;
       padding: 0 30px;
       margin-left: 15px;

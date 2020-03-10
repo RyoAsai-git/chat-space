@@ -9,29 +9,9 @@
       = link_to edit_group_path(current_user) do 
         = "Edit"
 
-  .message
-    -# = render @messages
-    .message__name
-      .ul-name
-        name
-      .ul-date
-        2019/11/20(Wed) 17:43:01
-    .message__content
-      おはよう
-    .message__name
-      .ul-name
-        name
-      .ul-date
-        2019/11/20(Wed) 17:43:01
-    .message__content
-      おはよう
-    .message__name
-      .ul-name
-        name
-      .ul-date
-        2019/11/20(Wed) 17:43:01
-    .message__content
-      おはよう
+  .messages
+    = render @messages
+
     
   .form
     .form__textbox
@@ -40,6 +20,7 @@
           = f.text_field :body, class: 'ul-content__text', placeholder: 'type a message'
           = f.label :image, class: "ul-content__text__image" do
             = icon('fas', 'image', class: 'icon')
-            = f.file_field :file, class: 'ul-content__text__image__file'
+            = f.file_field :image, class: 'ul-content__text__image__file'
           .ul-submit   
           = f.submit 'Send', class: 'ul-submit'
+         

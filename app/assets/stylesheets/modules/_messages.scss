@@ -97,10 +97,9 @@ $color-message-base: #ffffff;
 }
 
 .messages {
-  background-color: #fafafa;
   height: calc(100vh - 190px);
   overflow: scroll;
-  
+  background-color: #fafafa;
 
   .upper-message {
     display: flex;

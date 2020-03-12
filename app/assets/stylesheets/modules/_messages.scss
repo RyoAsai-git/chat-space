@@ -65,7 +65,6 @@ $color-message-base: #ffffff;
   background-color: $color-message-base;
   height: 100px;
   width: calc(100vw - 300px);
-  border-bottom: 0.5px #999999 solid;
   display: flex;
   &__name {
     margin: 35px 0 15px 40px;
@@ -100,6 +99,7 @@ $color-message-base: #ffffff;
 .messages {
   height: calc(100vh - 190px);
   overflow: scroll;
+  background-color: #fafafa;
 
   .upper-message {
     display: flex;

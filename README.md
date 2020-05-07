@@ -80,3 +80,32 @@ has_many :messages:
 has_many :group_users
 has_many :users, through: :groups_users
 
+
+### 詳細
+
+TechCampカリキュラムで作成したチャットアプリケーションです。
+http://52.69.253.231/
+
+## 主な機能
+・ユーザーの登録、ログイン機能<br>
+・ユーザーによるチャットグループ作成機能、編集機能<br>
+・メッセージ、画像を含むチャットメッセージ送信機能<br>
+
+## フロントエンド
+・Haml<br>
+・sass<br>
+・JQuery<br>
+
+## サーバーサイド
+・Ruby 2.5.1<br>
+・Ruby on Rails 5.0.7.2<br>
+・MySQL 5.6<br>
+
+## インフラ
+・AWS<br>
+  ・EC2<br>
+  ・S3<br>
+## テスト
+・RSpec<br>
+　・単体テスト<br>
+　・コントローラーテスト<br>

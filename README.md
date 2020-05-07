@@ -1,27 +1,10 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### chat-space
 
-Things you may want to cover:
+![3bffeab7a41bd2f0d6fe6408dcf32a0f (1)](https://user-images.githubusercontent.com/61679701/81254395-eb2e5400-9065-11ea-9045-2e3cbc7573cc.gif)
 
-* Ruby version
+![b3294be29d3c10fac1939f85fd9591c6](https://user-images.githubusercontent.com/61679701/81254538-61cb5180-9066-11ea-94b0-49754b0cd820.gif)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 
 ## groups_usersテーブル
 

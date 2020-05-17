@@ -5,8 +5,6 @@
 
 ![b3294be29d3c10fac1939f85fd9591c6](https://user-images.githubusercontent.com/61679701/81254538-61cb5180-9066-11ea-94b0-49754b0cd820.gif)
 
-![amaki](https://user-images.githubusercontent.com/61679701/82142712-4851b300-9879-11ea-89f1-a8fccb64b707.png)
-
 
 ## groups_usersテーブル
 

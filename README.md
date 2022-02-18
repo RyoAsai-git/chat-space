@@ -66,7 +66,6 @@ has_many :users, through: :groups_users
 
 ### 詳細
 
-TechCampカリキュラムで作成したチャットアプリケーションです。
 http://52.69.253.231/
 
 ## 主な機能

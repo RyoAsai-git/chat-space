@@ -66,7 +66,7 @@ has_many :users, through: :groups_users
 
 ### 詳細
 
-http://52.69.253.231/
+~~http://52.69.253.231/~~
 
 ## 主な機能
 ・ユーザーの登録、ログイン機能<br>
